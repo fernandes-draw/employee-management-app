@@ -1,0 +1,53 @@
+.employee-management-button {
+  padding: .5rem .75rem;
+  bottom: none;
+  border-radius: var(--border-small);
+  font-size: 1.5rem;
+  font-weight: 600;
+  outline: none;
+}
+
+.employee-management-button:hover {
+  cursor: pointer;
+  padding: .375rem .625rem;
+  background-color: var(--foreground);
+}
+
+.employee-management-button-transparent {
+  background-color: transparent;
+}
+
+.employee-management-button-transparent:hover {
+  padding: inherit;
+  background-color: transparent;
+}
+
+.employee-management-button-primary {
+  background-color: var(--primary);
+  color: var(--text-primary);
+}
+
+.employee-management-button-primary:hover {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.employee-management-button-secondary {
+  background-color: var(--secondary);
+  color: var(--text-secondary);
+}
+
+.employee-management-button-secondary:hover {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.employee-management-button-error {
+  background-color: var(--error-red);
+  color: var(--text-primary);
+}
+
+.employee-management-button-error:hover {
+  border: 2px solid var(--error-red);
+  color: var(--error-red);
+}

@@ -71,3 +71,4 @@ export default defineConfig([
   },
 ])
 ```
+([The Complete Full Stack Spring Security Course](https://youtu.be/6Dlxwk8UbRw?list=PL5R-b_5v2l0jWTB4VquVJhgUGTdgnoT8o&t=8885))

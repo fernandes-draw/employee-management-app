@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { LoginForm } from '../components/LoginForm/LoginForm';
 import useGlobalContext, {
   type GlobalContextType,
 } from '../services/GlobalContext';
@@ -22,7 +23,7 @@ export default function LoginPage() {
     <div className='page'>
       <div className='page-container-center'>
         <h1>Company Portal</h1>
-        <>Login Form</>
+        <LoginForm />
       </div>
     </div>
   );

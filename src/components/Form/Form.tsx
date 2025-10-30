@@ -1,5 +1,6 @@
 import type React from 'react';
 import './Form.css';
+import { Button } from '../Button/Button';
 
 interface FormProps {
   buttonText: string;
@@ -29,6 +30,9 @@ export const Form: React.FC<FormProps> = ({
         <p className='employee-management-form-error-message'>{errorMessage}</p>
       )}
       {children}
+      <Button type={`primary`} handleClick={action}>
+        {buttonText}
+      </Button>
     </form>
   );
 };
