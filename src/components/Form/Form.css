@@ -1,0 +1,10 @@
+.employee-management-form {
+  padding: 1rem;
+  border-radius: var(--border-large);
+  box-shadow: var(--box-shadow);
+  background-color: var(--background);
+}
+
+.employee-management-form-border {
+  border: 1px solid var(--border-color);
+}

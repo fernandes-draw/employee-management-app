@@ -1,7 +1,8 @@
 import { createContext, useContext, useState } from 'react';
 import type { Employee } from '../type';
 import type { AuthenticationServiceType } from './AuthenticationService';
-import useAxios from './UseAxios';
+import useAuthenticationService from './AuthenticationService';
+import useAxios from './useAxios';
 
 export type GlobalContextType = {
   employee: Employee | undefined;
@@ -39,14 +40,22 @@ function GlobalContextProvider(props: { children: React.ReactNode }) {
     updateEmployees,
   };
 
+  const authenticationService = useAuthenticationService(
+    axiosRequest,
+    reducers
+  );
+
   return (
     <GlobalContext.Provider
       value={{
         employee,
         employees,
+        authenticationService,
       }}
     >
       {props.children}
     </GlobalContext.Provider>
   );
 }
+
+export { useGlobalContext as default, GlobalContextProvider };
