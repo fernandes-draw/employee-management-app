@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import LayoutPage from './LayoutPage';
+import LayoutPage from './pages/LayoutPage';
 
 function App() {
   return (
